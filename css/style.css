@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 800px;
+    height: 800px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 150px;
+    background: yellow;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    height: calc(100% - 150px);
+}
+
+.left-scroll {
+    width: 150px;
+    background: deeppink;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.left-item {
+    height: 150px;
+    background: green;
+}
+
+.center-scroll {
+    flex: 1;
+    background: lightgreen;
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.center-item {
+    min-width: 300px;
+    height: 100%;
+    background: darkgreen;
+}
+
+.right {
+    width: 150px;
+    background: blueviolet;
+}
